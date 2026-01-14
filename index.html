@@ -58,8 +58,8 @@
                 <legend>Perfil</legend>
 
                 <div>
-                    <span>Gênero:</span><br>
-                    <input type="radio" id="male" name="userGender" value="male">
+                    <label>Gênero:</label>
+                    <input type="radio" id="male" name="userGender" value="male" required>
                     <label for="male">Masculino</label>
 
                     <input type="radio" id="female" name="userGender" value="female">
@@ -70,7 +70,7 @@
                 </div>
 
                 <div>
-                    <label for="maritalStatus">Estado Civil</label>
+                    <label for="maritalStatus">Estado Civil:</label>
                     <select id="maritalStatus" name="maritalStatus" required>
                         <option value="" disabled selected>Selecione uma opção</option>
                         <option value="single">Solteiro(a)</option>
@@ -79,6 +79,45 @@
                         <option value="union">União Estável</option>
                         <option value="widowed">Viúvo(a)</option>
                     </select>
+                </div>
+
+                <div>
+                    <label for="userState">Estado:</label>
+                    <select id="userState" name="userState" autocomplete="address-level1" required>
+                        <option value="" disabled selected>Selecione seu estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="userCity">Cidade:</label>
+                    <input type="text" id="userCity" name="userCity" autocomplete="address-level2" placeholder="Digite sua cidade" required>
                 </div>
 
                 <button type="submit">Enviar perfil</button>
