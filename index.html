@@ -17,28 +17,28 @@
                 <legend>Dados Pessoais</legend>
 
                 <div>
-                    <label for="userName">Nome Completo:</label>
-                    <input type="text" id="userName" name="userName" required>
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" name="userName" required>
                 </div>
 
                 <div>
-                    <label for="userAge">Idade:</label>
-                    <input type="number" id="userAge" name="userAge" min="12" max="100" required>
+                    <label for="age">Idade:</label>
+                    <input type="number" id="age" name="userAge" min="12" max="100" required>
                 </div>
 
                 <div>
                     <label for="birthDate">Data de Nascimento:</label>
-                    <input type="date" id="birthDate" name="birthDate" max="2026-12-31" required>
+                    <input type="date" id="birthDate" name="userBirthDate" max="2026-12-31" required>
                 </div>
 
                 <div>
-                    <label for="userEmail">Email:</label>
-                    <input type="email" id="userEmail" name="userEmail">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="userEmail">
                 </div>
 
                 <div>
-                    <label for="userPhoneNumber">Telefone:</label>
-                    <input type="tel" id="userPhoneNumber" name="userPhoneNumber"
+                    <label for="phoneNumber">Telefone:</label>
+                    <input type="tel" id="phoneNumber" name="userPhoneNumber"
                     pattern="[0-9]{11}"
                     placeholder="11988887777"
                     title="Digite 11 números (Ex: 11988887777)"
@@ -46,11 +46,10 @@
                 </div>
 
                 <div>
-                    <label for="userImage">Foto de Perfil:</label>
-                    <input type="file" id="userImage" name="userImage" accept="image/*">
+                    <label for="image">Foto de Perfil:</label>
+                    <input type="file" id="image" name="userImage" accept="image/*">
                 </div>
 
-                <br>
                 <button type="submit">Enviar cadastro</button>
             </fieldset>
             
@@ -71,7 +70,7 @@
 
                 <div>
                     <label for="maritalStatus">Estado Civil:</label>
-                    <select id="maritalStatus" name="maritalStatus" required>
+                    <select id="maritalStatus" name="userMaritalStatus" required>
                         <option value="" disabled selected>Selecione uma opção</option>
                         <option value="single">Solteiro(a)</option>
                         <option value="married">Casado(a)</option>
@@ -82,8 +81,8 @@
                 </div>
 
                 <div>
-                    <label for="userState">Estado:</label>
-                    <select id="userState" name="userState" autocomplete="address-level1" required>
+                    <label for="state">Estado:</label>
+                    <select id="state" name="userState" autocomplete="address-level1" required>
                         <option value="" disabled selected>Selecione seu estado</option>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
@@ -116,11 +115,53 @@
                 </div>
 
                 <div>
-                    <label for="userCity">Cidade:</label>
-                    <input type="text" id="userCity" name="userCity" autocomplete="address-level2" placeholder="Digite sua cidade" required>
+                    <label for="city">Cidade:</label>
+                    <input type="text" id="city" name="userCity" autocomplete="address-level2" placeholder="Digite sua cidade" required>
                 </div>
 
-                <button type="submit">Enviar perfil</button>
+                <button type="submit">Enviar perfil</button> 
+            </fieldset>
+
+            <fieldset>
+                <legend>Hábitos</legend>
+
+                <div>
+                    <label>Redes Sociais:</label>
+                    <input type="checkbox" id="instagram" name="userSocialMedia[]" value="instagram">
+                    <label for="instagram">Instagram</label>
+                    <input type="checkbox" id="facebook" name="userSocialMedia[]" value="facebook">
+                    <label for="facebook">Facebook</label>
+                    <input type="checkbox" id="x" name="userSocialMedia[]" value="x">
+                    <label for="x">X</label>
+                    <input type="checkbox" id="tiktok" name="userSocialMedia[]" value="tiktok">
+                    <label for="tiktok">TikTok</label>
+                    <input type="checkbox" id="linkedin" name="userSocialMedia[]" value="linkedin">
+                    <label for="linkedin">LinkedIn</label>
+                </div>
+
+                <div>
+                    <label for="musicStyle">Estilo Musical:</label>
+                    <input list="musicStyles" name="userMusicStyle" id="musicStyle">
+                    <datalist id="musicStyles">
+                        <option value="Pop">
+                        <option value="Rock">
+                        <option value="Sertanejo">
+                        <option value="Funk">
+                        <option value="MPB">
+                        <option value="Eletrônica">
+                        <option value="Clássica">
+                        <option value="Jazz">
+                        <option value="Hip Hop">
+                        <option value="Reggae">
+                    </datalist>
+                </div>
+
+                <div>
+                    <label for="favoriteColor">Cor Favorita:</label>
+                    <input type="color" id="favoriteColor" name="userFavoriteColor">
+                </div>
+
+                <button type="submit">Enviar hábitos</button>
             </fieldset>
         </form>
 
