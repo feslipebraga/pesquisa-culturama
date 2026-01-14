@@ -14,7 +14,6 @@
     <section>
         <form action="" method="GET">
             <fieldset>
-                <!-- DADOS PESSOAIS -->
                 <legend>Dados Pessoais</legend>
 
                 <div>
@@ -53,6 +52,36 @@
 
                 <br>
                 <button type="submit">Enviar cadastro</button>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Perfil</legend>
+
+                <div>
+                    <span>Gênero:</span><br>
+                    <input type="radio" id="male" name="userGender" value="male">
+                    <label for="male">Masculino</label>
+
+                    <input type="radio" id="female" name="userGender" value="female">
+                    <label for="female">Feminino</label>
+                    
+                    <input type="radio" id="other" name="userGender" value="other">
+                    <label for="other">Outro</label>
+                </div>
+
+                <div>
+                    <label for="maritalStatus">Estado Civil</label>
+                    <select id="maritalStatus" name="maritalStatus" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="single">Solteiro(a)</option>
+                        <option value="married">Casado(a)</option>
+                        <option value="divorced">Divorciado(a)</option>
+                        <option value="union">União Estável</option>
+                        <option value="widowed">Viúvo(a)</option>
+                    </select>
+                </div>
+
+                <button type="submit">Enviar perfil</button>
             </fieldset>
         </form>
 
