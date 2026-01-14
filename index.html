@@ -38,11 +38,8 @@
 
                 <div>
                     <label for="phoneNumber">Telefone:</label>
-                    <input type="tel" id="phoneNumber" name="userPhoneNumber"
-                    pattern="[0-9]{11}"
-                    placeholder="11988887777"
-                    title="Digite 11 números (Ex: 11988887777)"
-                    required>
+                    <input type="tel" id="phoneNumber" name="userPhoneNumber" pattern="[0-9]{11}"
+                        placeholder="11988887777" title="Digite 11 números (Ex: 11988887777)" required>
                 </div>
 
                 <div>
@@ -50,7 +47,7 @@
                     <input type="file" id="image" name="userImage" accept="image/*">
                 </div>
             </fieldset>
-            
+
             <fieldset>
                 <legend>Perfil</legend>
 
@@ -61,7 +58,7 @@
 
                     <input type="radio" id="female" name="userGender" value="female">
                     <label for="female">Feminino</label>
-                    
+
                     <input type="radio" id="other" name="userGender" value="other">
                     <label for="other">Outro</label>
                 </div>
@@ -114,7 +111,8 @@
 
                 <div>
                     <label for="city">Cidade:</label>
-                    <input type="text" id="city" name="userCity" autocomplete="address-level2" placeholder="Digite sua cidade" required>
+                    <input type="text" id="city" name="userCity" autocomplete="address-level2"
+                        placeholder="Digite sua cidade" required>
                 </div>
             </fieldset>
 
@@ -155,6 +153,27 @@
                 <div>
                     <label for="favoriteColor">Cor Favorita:</label>
                     <input type="color" id="favoriteColor" name="userFavoriteColor">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Opinião</legend>
+
+                <div>
+                    <label for="satisfactionScale">Escala de Satisfação:</label>
+                    <select name="userSatisfactionScale" id="satisfactionScale" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="great">Ótima</option>
+                        <option value="good">Boa</option>
+                        <option value="regular">Regular</option>
+                        <option value="bad">Ruim</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="openComment">Comentário aberto:</label><br>
+                    <textarea name="userOpenComment" id="openComment" rows="5" cols="40" maxlength="500"
+                        placeholder="Conte-nos mais sobre sua experiência (máx. 500 caracteres)..."></textarea>
                 </div>
             </fieldset>
 
