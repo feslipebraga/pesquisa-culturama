@@ -60,6 +60,8 @@ textarea {
 
 textarea {
     min-height: 100px;
+    max-height: 300px;
+    resize: vertical;
 }
 
 input[type="radio"],
@@ -68,7 +70,7 @@ input[type="checkbox"] {
 }
 
 input[type="color"] {
-    width: 40px;
+    width: 50px;
     padding: 0 5px;
 }
 
@@ -77,3 +79,20 @@ label {
     margin-bottom: 5px;
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
