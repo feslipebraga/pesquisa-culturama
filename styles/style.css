@@ -74,6 +74,7 @@ input[type="color"] {
     padding: 0 5px;
 }
 
+
 label {
     display: inline-block;
     margin-bottom: 5px;
@@ -95,4 +96,19 @@ input[type="reset"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    background-color: #F9F9F9;
+    border-color: #999999;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="reset"]:hover{
+    background-color: #6c757d;
 }
