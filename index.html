@@ -46,7 +46,8 @@
                     <div>
                         <label for="phoneNumber">Telefone:</label>
                         <input type="tel" id="phoneNumber" name="userPhoneNumber" pattern="[0-9]{11}"
-                            placeholder="11988887777" title="Digite 11 números (Ex: 11988887777)" required>
+                            placeholder="11988887777" title="Digite 11 números (Ex: 11988887777)" aria-describedby="phoneHelp" required>
+                        <small id="phoneHelp">Preencha com 11 dígitos sem espaços ou caracteres especiais</small>
                     </div>
     
                     <div>
