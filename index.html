@@ -20,46 +20,47 @@
         </header>
         <section>
             <form action="./sucesso.html" method="GET">
-                <fieldset>
+                <fieldset class="personal-data">
                     <legend>Dados Pessoais</legend>
     
-                    <div>
+                    <div class="form-field">
                         <label for="name">Nome Completo:</label>
                         <input type="text" id="name" name="userName" required>
                     </div>
     
-                    <div>
+                    <div class="form-field">
                         <label for="age">Idade:</label>
                         <input type="number" id="age" name="userAge" min="12" max="100" required>
                     </div>
     
-                    <div>
+                    <div class="form-field">
                         <label for="birthDate">Data de Nascimento:</label>
                         <input type="date" id="birthDate" name="userBirthDate" max="2026-12-31" required>
                     </div>
     
-                    <div>
+                    <div class="form-field">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="userEmail">
                     </div>
     
-                    <div>
+                    <div class="form-field">
                         <label for="phoneNumber">Telefone:</label>
                         <input type="tel" id="phoneNumber" name="userPhoneNumber" pattern="[0-9]{11}"
-                            placeholder="11988887777" title="Digite 11 números (Ex: 11988887777)" aria-describedby="phoneHelp" required>
+                            placeholder="DDD + Número" title="Digite 11 números (Ex: 11988887777)" aria-describedby="phoneHelp" required>
                         <small id="phoneHelp">Preencha com 11 dígitos sem espaços ou caracteres especiais</small>
                     </div>
     
-                    <div>
+                    <div class="form-field">
                         <label for="image">Foto de Perfil:</label>
-                        <input type="file" id="image" name="userImage" accept="image/*">
+                        <input type="file" id="image" name="userImage" accept="image/png, image/jpeg" aria-describedby="imageHelp">
+                        <small id="imageHelp">Envie uma foto de perfil no formato PNG ou JPEG.</small>
                     </div>
                 </fieldset>
     
-                <fieldset>
+                <fieldset class="profile">
                     <legend>Perfil</legend>
     
-                    <div>
+                    <div class="optin-group">
                         <label>Gênero:</label>
                         <input type="radio" id="male" name="userGender" value="male" required>
                         <label for="male">Masculino</label>
@@ -71,7 +72,7 @@
                         <label for="other">Outro</label>
                     </div>
     
-                    <div>
+                    <div class="form-field">
                         <label for="maritalStatus">Estado Civil:</label>
                         <select id="maritalStatus" name="userMaritalStatus" required>
                             <option value="" disabled selected>Selecione uma opção</option>
@@ -83,7 +84,7 @@
                         </select>
                     </div>
     
-                    <div>
+                    <div class="form-field">
                         <label for="state">Estado:</label>
                         <select id="state" name="userState" autocomplete="address-level1" required>
                             <option value="" disabled selected>Selecione seu estado</option>
@@ -117,17 +118,17 @@
                         </select>
                     </div>
     
-                    <div>
+                    <div class="form-field">
                         <label for="city">Cidade:</label>
                         <input type="text" id="city" name="userCity" autocomplete="address-level2"
                             placeholder="Digite sua cidade" required>
                     </div>
                 </fieldset>
     
-                <fieldset>
+                <fieldset class="habits">
                     <legend>Hábitos</legend>
     
-                    <div>
+                    <div class="optin-group">
                         <label>Redes Sociais:</label>
                         <input type="checkbox" id="instagram" name="userSocialMedia[]" value="instagram">
                         <label for="instagram">Instagram</label>
@@ -145,7 +146,7 @@
                         <label for="linkedin">LinkedIn</label>
                     </div>
     
-                    <div>
+                    <div class="form-field">
                         <label for="musicStyle">Estilo Musical:</label>
                         <input list="musicStyles" name="userMusicStyle" id="musicStyle">
                         <datalist id="musicStyles">
@@ -162,16 +163,16 @@
                         </datalist>
                     </div>
     
-                    <div>
+                    <div class="form-field">
                         <label for="favoriteColor">Cor Favorita:</label>
                         <input type="color" id="favoriteColor" name="userFavoriteColor">
                     </div>
                 </fieldset>
     
-                <fieldset>
+                <fieldset class="feedback">
                     <legend>Opinião</legend>
     
-                    <div>
+                    <div class="form-field">
                         <label for="satisfactionScale">Escala de Satisfação:</label>
                         <select name="userSatisfactionScale" id="satisfactionScale" required>
                             <option value="" disabled selected>Selecione uma opção</option>
@@ -182,22 +183,22 @@
                         </select>
                     </div>
     
-                    <div>
-                        <label for="openComment">Comentário aberto:</label><br>
+                    <div class="form-field">
+                        <label for="openComment">Comentário aberto:</label>
                         <textarea name="userOpenComment" id="openComment" rows="5" maxlength="500"
                             placeholder="Conte-nos mais sobre sua experiência (máx. 500 caracteres)..."></textarea>
                     </div>
                 </fieldset>
     
-                <fieldset>
+                <fieldset class="confirmations">
                     <legend>Confirmações</legend>
     
-                    <div>
+                    <div class="optin-group">
                         <input type="checkbox" name="acceptResearch" id="acceptResearch" value="yes" required>
                         <label for="acceptResearch">Eu aceito participar da pesquisa</label>
                     </div>
     
-                    <div>
+                    <div class="optin-group">
                         <input type="checkbox" id="receiveResults" name="receiveResults" value="yes">
                         <label for="receiveResults">Desejo receber o resultado por e-mail</label>
                     </div>

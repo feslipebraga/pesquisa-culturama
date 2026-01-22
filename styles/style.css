@@ -47,13 +47,11 @@ legend {
     padding: 0 10px;
 }
 
-
 input,
 select,
 textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
     border: 1px solid #CCCCCC;
     border-radius: 5px;
 }
@@ -64,28 +62,40 @@ textarea {
     resize: vertical;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-    width: auto;
-}
-
 input[type="color"] {
-    width: 50px;
+    width: 100px;
     padding: 0 5px;
 }
 
-input[type="tel"] {
-    margin-bottom: 0;
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-small {
-    display: inline-block;
-    margin-bottom: 20px;
+.optin-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 15px;
 }
 
-label {
-    display: inline-block;
-    margin-bottom: 5px;
+.optin-group label:first-child {
+    width: 100%;
+}
+
+.optin-group input[type="checkbox"],
+.optin-group input[type="radio"] {
+    width: auto;
+}
+
+.personal-data,
+.profile,
+.habits,
+.feedback,
+.confirmations {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .buttons {
@@ -117,6 +127,6 @@ input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-input[type="reset"]:hover{
+input[type="reset"]:hover {
     background-color: #6c757d;
 }
