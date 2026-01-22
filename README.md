@@ -26,6 +26,7 @@ Formulário completo de pesquisa de satisfação desenvolvido com foco em:
 - ✅ Design responsivo para mobile e desktop
 - ✅ Página de confirmação após envio
 - ✅ Atributos de acessibilidade (aria-labels, autocomplete)
+- ✅ Meta tags Open Graph para compartilhamento em redes sociais
 - ✅ Interface limpa e intuitiva
 
 ## 📱 Layout Responsivo
@@ -50,6 +51,7 @@ pesquisa-culturama/
 - Desenvolvimento front-end
 - HTML semântico e acessível
 - CSS responsivo
+- Meta tags e SEO (Open Graph)
 - Versionamento com Git/GitHub
 - Deploy de aplicação web
 
