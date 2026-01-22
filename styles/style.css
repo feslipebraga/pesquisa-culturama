@@ -75,17 +75,51 @@ input[type="color"] {
 
 .optin-group {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.group-label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.options {
+    display: flex;
     flex-wrap: wrap;
     gap: 10px 15px;
 }
 
-.optin-group label:first-child {
-    width: 100%;
+.option-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
-.optin-group input[type="checkbox"],
-.optin-group input[type="radio"] {
+.option-item input[type="checkbox"],
+.option-item input[type="radio"] {
     width: auto;
+    margin: 0;
+}
+
+.option-item label {
+    margin: 0;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-item input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.checkbox-item label {
+    margin: 0;
 }
 
 .personal-data,
