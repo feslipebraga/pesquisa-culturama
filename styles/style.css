@@ -5,14 +5,16 @@
 }
 
 body {
-    background-color: #F9F9F9;
+    background-color: #f9f9f9;
     font-family: 'Work Sans', sans-serif;
+    color: #333;
 }
 
 main {
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 header {
@@ -22,20 +24,28 @@ header {
 
 img {
     width: 100px;
+    height: auto;
 }
 
 h1 {
     font-family: 'Fjalla One', sans-serif;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+h2 {
+    font-family: 'Fjalla One', sans-serif;
 }
 
 form {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding: 15px;
     border-radius: 10px;
+    border: 1px solid #ccc;
 }
 
 fieldset {
-    border: 1px solid #CCCCCC;
+    border: 1px solid #ccc;
     border-radius: 10px;
     padding: 15px;
     margin-bottom: 15px;
@@ -43,7 +53,7 @@ fieldset {
 
 legend {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.1rem;
     padding: 0 10px;
 }
 
@@ -52,8 +62,16 @@ select,
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #CCCCCC;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #007bff;
 }
 
 textarea {
@@ -64,13 +82,23 @@ textarea {
 
 input[type="color"] {
     width: 100px;
-    padding: 0 5px;
+    cursor: pointer;
 }
 
 .form-field {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    margin-bottom: 0;
+}
+
+.form-field label {
+    font-weight: 500;
+}
+
+.form-field small {
+    color: #666;
+    font-size: 0.9rem;
 }
 
 .optin-group {
@@ -81,45 +109,47 @@ input[type="color"] {
 
 .group-label {
     font-weight: 600;
-    display: block;
-    margin-bottom: 5px;
 }
 
 .options {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 15px;
+    gap: 15px;
 }
 
 .option-item {
     display: flex;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
 }
 
 .option-item input[type="checkbox"],
 .option-item input[type="radio"] {
     width: auto;
-    margin: 0;
+    cursor: pointer;
 }
 
 .option-item label {
     margin: 0;
+    cursor: pointer;
 }
 
 .checkbox-item {
     display: flex;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
 }
 
 .checkbox-item input[type="checkbox"] {
     width: auto;
-    margin: 0;
+    cursor: pointer;
 }
 
 .checkbox-item label {
     margin: 0;
+    cursor: pointer;
 }
 
 .personal-data,
@@ -135,26 +165,25 @@ input[type="color"] {
 .buttons {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 input[type="submit"],
 input[type="reset"] {
     padding: 10px 20px;
-    margin: 5px;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
-input:hover,
-select:hover,
-textarea:hover {
-    background-color: #F9F9F9;
-    border-color: #999999;
+input[type="reset"] {
+    background-color: #6c757d;
 }
 
 input[type="submit"]:hover {
@@ -162,5 +191,116 @@ input[type="submit"]:hover {
 }
 
 input[type="reset"]:hover {
-    background-color: #6c757d;
+    background-color: #5a6268;
+}
+
+/* PÁGINA DE SUCESSO */
+
+.success-section {
+    padding: 40px 0;
+}
+
+.success-box {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.success-box h2 {
+    font-size: 1.8rem;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.success-box p {
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.success-info {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 20px 0;
+    border-left: 4px solid #007bff;
+    text-align: left;
+}
+
+.success-info p {
+    margin-bottom: 0;
+    color: #333;
+}
+
+.button-group {
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 15px;
+    color: #666;
+    border-top: 1px solid #ccc;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+    main {
+        padding: 0 10px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    form {
+        padding: 10px;
+    }
+    
+    fieldset {
+        padding: 10px;
+    }
+    
+    .options {
+        gap: 10px;
+    }
+    
+    .buttons {
+        flex-direction: column;
+    }
+    
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+    }
+    
+    .success-box {
+        padding: 25px 20px;
+    }
+    
+    .success-box h2 {
+        font-size: 1.5rem;
+    }
 }
