@@ -2,7 +2,7 @@
 
 > Formulário web responsivo desenvolvido com HTML5 e CSS3 puro, focado em boas práticas e acessibilidade.
 
-## 🚀 [Acesse o Projeto Online](https://feslipebraga.github.io/pesquisa-culturama/)
+## 🚀 [Clique aqui para acessar o formulário](https://feslipebraga.github.io/pesquisa-culturama/)
 
 ---
 
