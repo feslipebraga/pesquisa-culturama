@@ -1,92 +1,58 @@
-# Pesquisa de Satisfação - Culturama
+# 📋 Pesquisa de Satisfação - Culturama
 
-Formulário de pesquisa de satisfação desenvolvido para o Culturama, utilizando HTML e CSS.
+> Formulário web responsivo desenvolvido com HTML5 e CSS3 puro, focado em boas práticas e acessibilidade.
 
-## 📋 Sobre o Projeto
+## 🚀 [Acesse o Projeto Online](https://feslipebraga.github.io/pesquisa-culturama/)
 
-Este projeto é um formulário web completo para coleta de dados de pesquisa de satisfação. Inclui validações de campos, design responsivo e uma página de confirmação após o envio.
+---
 
-## 🚀 Tecnologias Utilizadas
+## 💡 Sobre o Projeto
 
-- **HTML5** - Estrutura semântica e acessível
+Formulário completo de pesquisa de satisfação desenvolvido com foco em:
+- Estrutura semântica HTML5
+- Design responsivo mobile-first
+- Acessibilidade (WCAG)
+- Código limpo e organizado
+
+## 🛠️ Tecnologias
+
+- **HTML5** - Estrutura semântica
 - **CSS3** - Estilização e responsividade
-- **Google Fonts** - Tipografia (Fjalla One e Work Sans)
+- **GitHub Pages** - Deploy
 
-## 📁 Estrutura do Projeto
+## ✨ Funcionalidades
+
+- ✅ Validação de campos com HTML5
+- ✅ Design responsivo para mobile e desktop
+- ✅ Página de confirmação após envio
+- ✅ Atributos de acessibilidade (aria-labels, autocomplete)
+- ✅ Interface limpa e intuitiva
+
+## 📱 Layout Responsivo
+
+O projeto adapta-se perfeitamente a diferentes dispositivos:
+- Desktop (> 600px)
+- Tablet e Mobile (≤ 600px)
+
+## 📂 Estrutura
 
 ```
 pesquisa-culturama/
-├── index.html          # Página principal com formulário
-├── sucesso.html        # Página de confirmação
-├── assets/             # Imagens do projeto
-│   └── logo-culturama.png
-├── styles/             # Arquivos de estilo
-│   └── style.css
-└── README.md           # Documentação
+├── index.html        # Formulário principal
+├── sucesso.html      # Página de confirmação
+├── styles/
+│   └── style.css     # Estilos
+└── assets/           # Imagens
 ```
 
-## 🎨 Funcionalidades
+## 🎯 Competências Demonstradas
 
-### Seções do Formulário:
+- Desenvolvimento front-end
+- HTML semântico e acessível
+- CSS responsivo
+- Versionamento com Git/GitHub
+- Deploy de aplicação web
 
-1. **Dados Pessoais**
-   - Nome completo
-   - Idade
-   - Data de nascimento
-   - Email
-   - Telefone
-   - Foto de perfil
+---
 
-2. **Perfil**
-   - Gênero
-   - Estado civil
-   - Estado
-   - Cidade
-
-3. **Hábitos**
-   - Redes sociais (múltipla escolha)
-   - Estilo musical
-   - Cor favorita
-
-4. **Opinião**
-   - Escala de satisfação
-   - Comentário aberto
-
-5. **Confirmações**
-   - Aceite de participação (obrigatório)
-   - Opção para receber resultados por email
-
-## ✨ Características
-
-- ✅ Formulário com validação HTML5
-- ✅ Design responsivo para mobile e desktop
-- ✅ Acessibilidade com labels e aria-describedby
-- ✅ Página de sucesso após envio
-- ✅ Atributos autocomplete para melhor UX
-- ✅ Estrutura semântica e organizada
-
-## 🎯 Como Usar
-
-1. Clone ou baixe o projeto
-2. Abra o arquivo `index.html` no navegador
-3. Preencha o formulário
-4. Clique em "Enviar Formulário"
-5. Visualize a página de confirmação
-
-## 🌐 Compatibilidade
-
-O projeto é compatível com os principais navegadores:
-- Chrome
-- Firefox
-- Safari
-- Edge
-
-## 📱 Responsividade
-
-O formulário é totalmente responsivo e se adapta a diferentes tamanhos de tela:
-- Desktop (> 600px)
-- Mobile (≤ 600px)
-
-## 👨‍💻 Autor
-
-Desenvolvido como projeto de estudo em HTML e CSS.
+⭐ **Desenvolvido por Felipe Braga** | [GitHub](https://github.com/feslipebraga)
